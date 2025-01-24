@@ -1,8 +1,11 @@
 name: Hprofile Actions
-on: workflow_dispatch
+
+on: 
+  workflow_dispatch:   # This allows the workflow to be manually triggered
+
 jobs:
   Testing:
     runs-on: ubuntu-latest
     steps:
-      -name: Testing workflow
-       run: echo "workflows works"
+      - name: Testing workflow
+        run: echo "Workflow works!"
